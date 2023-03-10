@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <form action="/survey" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" name="name">
+        <label for="location">Dojo location: </label>
+        <select name="location" id="location" name="location">
+            <option value="Berkley">Berkley</option>
+            <option value="Boise">Boise</option>
+            <option value="Chicago">Chicago</option>
+            <option value="Dallas">Dallas</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="San Jose">San Jose</option>
+            <option value="Seattle">Seattle</option>
+            <option value="Tulsa">Tulsa</option>
+            <option value="Virginia">Virginia</option>
+        </select>
+        <label for="lang">Favorite Language: </label>
+        <select name="lang" id="lang" name="lang">
+            <option value="C">C</option>
+            <option value="C#">C#</option>
+            <option value="CSS">CSS</option>
+            <option value="HTML5">HTML5</option>
+            <option value="Java">Java</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="R">R</option>
+            <option value="Ruby">Ruby</option>
+        </select>
+        <label for="comment">Comment (optional): </label>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        <button type="submit">Submit Form</button>
+    </form>
+</body>
+</html>

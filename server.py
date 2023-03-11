@@ -13,6 +13,14 @@ def survey():
     session["location"] = request.form['location']
     session["lang"] = request.form['lang']
     session['comment'] = request.form['comment']
+    session['radio'] = request.form['radio']
+    
+    if not request.form.get("check"):
+        session['check'] = "declined"
+    else:
+        session['check'] = 'accepted'
+
+    
 
     return redirect('/result')
 
